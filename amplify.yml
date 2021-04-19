@@ -1,6 +1,6 @@
 version: 1
 applications:
-  - appRoot: /app-one
+  - appRoot: app-one
     frontend:
       artifacts:
         baseDirectory: out
@@ -16,7 +16,7 @@ applications:
         build:
           commands:
             - npm run build --prefix app-one
-  - appRoot: /app-two
+  - appRoot: app-two
     frontend:
       artifacts:
         baseDirectory: out
