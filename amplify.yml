@@ -1,9 +1,9 @@
 version: 1
 applications:
-  - appRoot: app-one
+  - appRoot: /app-one
     frontend:
       artifacts:
-        baseDirectory: app-one/out
+        baseDirectory: /app-one/out
         files:
           - "**/*"
       cache:
@@ -16,10 +16,10 @@ applications:
         build:
           commands:
             - npm run build --prefix app-one
-  - appRoot: app-two
+  - appRoot: /app-two
     frontend:
       artifacts:
-        baseDirectory: app-two/out
+        baseDirectory: /app-two/out
         files:
           - "**/*"
       cache:
