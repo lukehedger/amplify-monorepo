@@ -12,10 +12,10 @@ applications:
       phases:
         preBuild:
           commands:
-            - npm install --prefix app-one
+            - npm install
         build:
           commands:
-            - npm run build --prefix app-one
+            - npm run build
   - appRoot: app-two
     frontend:
       artifacts:
@@ -28,7 +28,7 @@ applications:
       phases:
         preBuild:
           commands:
-            - npm install --prefix app-two
+            - npm install
         build:
           commands:
-            - npm run build --prefix app-two
+            - npm run build
