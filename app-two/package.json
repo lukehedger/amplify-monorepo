@@ -1,0 +1,15 @@
+{
+  "name": "app-two",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "next dev --port 2222",
+    "build": "next build && next export",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "9.5.4",
+    "react": "17.0.1",
+    "react-dom": "17.0.1"
+  }
+}

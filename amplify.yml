@@ -1,0 +1,34 @@
+version: 1
+applications:
+  - appRoot: app-one
+    frontend:
+      artifacts:
+        baseDirectory: app-one/out
+        files:
+          - "**/*"
+      cache:
+        paths:
+          - node_modules/**/*
+      phases:
+        preBuild:
+          commands:
+            - npm install --prefix app-one
+        build:
+          commands:
+            - npm run build --prefix app-one
+  - appRoot: app-two
+    frontend:
+      artifacts:
+        baseDirectory: app-two/out
+        files:
+          - "**/*"
+      cache:
+        paths:
+          - node_modules/**/*
+      phases:
+        preBuild:
+          commands:
+            - npm install --prefix app-two
+        build:
+          commands:
+            - npm run build --prefix app-two
