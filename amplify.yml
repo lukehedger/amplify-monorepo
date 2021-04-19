@@ -3,7 +3,7 @@ applications:
   - appRoot: /app-one
     frontend:
       artifacts:
-        baseDirectory: /app-one/out
+        baseDirectory: out
         files:
           - "**/*"
       cache:
@@ -19,7 +19,7 @@ applications:
   - appRoot: /app-two
     frontend:
       artifacts:
-        baseDirectory: /app-two/out
+        baseDirectory: out
         files:
           - "**/*"
       cache:
